@@ -1,3 +1,3 @@
-function getAge() {
+export function getAge() {
   return 30
 }

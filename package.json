@@ -2,7 +2,10 @@
   "name": "s-carousel",
   "version": "0.0.1",
   "description": "High-performance seamless scrolling plugin",
-  "main": "index.js",
+  "main": "./lib/index.js",
+  "files": [
+    "lib"
+  ],
   "scripts": {
     "compile": "tsc"
   },
