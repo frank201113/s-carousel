@@ -9,7 +9,7 @@ const webpackConfig = {
   entry: path.resolve(__dirname, 'src/s-carousel.ts'),
   output: {
     path: path.resolve(__dirname, 'lib'),
-    filename: 's-carousel.min.js',
+    filename: 's-carousel.js',
     library: 'SCarousel',
     libraryTarget: 'umd',
     libraryExport: 'default',
