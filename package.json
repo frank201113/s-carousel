@@ -1,6 +1,6 @@
 {
   "name": "s-carousel",
-  "version": "0.0.4-alpha.6",
+  "version": "0.0.4-alpha.7",
   "description": "High-performance seamless scrolling plugin",
   "main": "./lib/s-carousel.js",
   "types": "lib/carousel-type.d.ts",
