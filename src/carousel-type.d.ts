@@ -9,6 +9,10 @@ declare global {
 
 export type CarouselDirection = 'left' | 'right' | 'up' | 'down';
 
+export type PagePos = 'pageX' | 'pageY';
+
+export type Translate = 'translateX' | 'translateY';
+
 export interface IndexObserver {
   _innerActive: number;
   innerActive?: number;
@@ -89,7 +93,7 @@ export interface SCarouselInstance {
   /**
    * 直接滚动的某个索引的位置，或者向某个方向滚动一屏。
    */
-  go: (target: number|string) => void;
+  go: (target: number | string) => void;
 
   /**
    * 更新容器的宽高。

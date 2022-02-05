@@ -1,3 +1,30 @@
-import { SCarouselInstance, SCarouselProps } from "./carousel-type";
-declare function SCarousel(this: SCarouselInstance, opts: SCarouselProps): void;
+import { IndexObserver, PagePos, SCarouselProps, Translate } from "./carousel-type";
+declare class SCarousel {
+    wrap: HTMLElement | null;
+    list: HTMLElement | null;
+    items: HTMLCollection | null;
+    length: number;
+    isHorizontal: boolean;
+    pagePos: PagePos;
+    translate: Translate;
+    delayTimer: number | undefined;
+    moveRequestId: number | undefined;
+    offset: number | undefined;
+    destination: number | undefined;
+    startPos: number | undefined;
+    startOffset: number | undefined;
+    startTime: number | undefined;
+    startIndex: number | undefined;
+    stopped: boolean | undefined;
+    eleSize: number | undefined;
+    oneStep: number | undefined;
+    observerObj: Partial<IndexObserver>;
+    constructor(opts: SCarouselProps);
+    go(target: number | string): void;
+    start(): void;
+    stop(): void;
+    continue(): void;
+    resize(width: number, height: number): void;
+    destroy(): void;
+}
 export default SCarousel;
