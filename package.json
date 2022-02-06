@@ -17,6 +17,12 @@
     "type": "git",
     "url": "git+https://github.com/frank201113/s-carousel.git"
   },
+  "keywords": [
+    "carousel",
+    "seamless",
+    "scroll",
+    "banner"
+  ],
   "author": "frank",
   "license": "MIT",
   "devDependencies": {
