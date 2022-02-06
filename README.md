@@ -155,6 +155,6 @@ componentWillUnmount(){
 }
 ```
 
-Reference
+## Reference
 
 1. [seamless-scroll](https://github.com/haochuan9421/seamless-scroll)
